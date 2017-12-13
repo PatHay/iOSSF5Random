@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MWI-MM-Ydl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="YOZAKURA-Regular.otf">
+            <string>YOZAKURA-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Random Selector-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StreetFighterRandomSelector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcV-GQ-ZVr">
+                                <rect key="frame" x="85" y="480" width="205" height="84"/>
+                                <fontDescription key="fontDescription" name="YOZAKURA-Regular" family="YOZAKURA" pointSize="60"/>
+                                <state key="normal" title="Randomize!">
+                                    <color key="titleColor" red="0.99953407049999998" green="0.84096848430000004" blue="0.2915463204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mGt-An-fCI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AF-RG-7qE">
+                                <rect key="frame" x="15" y="248" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mNw-eT-MQN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="YOZAKURA-Regular" family="YOZAKURA" pointSize="50"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.84096848430000004" blue="0.2915463204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kNJ-iX-uHO">
+                                <rect key="frame" x="149.5" y="165" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="gL3-82-Cr5"/>
+                                    <constraint firstAttribute="width" constant="75" id="yfV-bl-vgH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ok-b5-pkq">
+                                <rect key="frame" x="150" y="306" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="I6G-c9-8za"/>
+                                    <constraint firstAttribute="width" constant="75" id="zCn-aF-CLn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street Fighter 5 Character Randomizer" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3C-83-wfT">
+                                <rect key="frame" x="16" y="20" width="343" height="113"/>
+                                <fontDescription key="fontDescription" name="YOZAKURA-Regular" family="YOZAKURA" pointSize="47"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.84096848430000004" blue="0.2915463204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNJ-bb-OaK">
+                                <rect key="frame" x="16" y="389" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8xA-QO-Xhn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="YOZAKURA-Regular" family="YOZAKURA" pointSize="50"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.84096848430000004" blue="0.2915463204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RcV-GQ-ZVr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="188.5" id="2eg-NI-S9g"/>
+                            <constraint firstItem="kNJ-iX-uHO" firstAttribute="top" secondItem="S3C-83-wfT" secondAttribute="bottom" constant="32" id="75O-u4-ICH"/>
+                            <constraint firstItem="4ok-b5-pkq" firstAttribute="top" secondItem="2AF-RG-7qE" secondAttribute="bottom" constant="8" id="8vl-5L-dD4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S3C-83-wfT" secondAttribute="trailing" constant="16" id="BZy-JQ-sZx"/>
+                            <constraint firstItem="rNJ-bb-OaK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EiG-aw-bSY"/>
+                            <constraint firstItem="rNJ-bb-OaK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J0I-z2-1M7"/>
+                            <constraint firstItem="2AF-RG-7qE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="QT1-4H-gBf"/>
+                            <constraint firstItem="RcV-GQ-ZVr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U9h-2M-iqh"/>
+                            <constraint firstItem="kNJ-iX-uHO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a5h-Bp-BAE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rNJ-bb-OaK" secondAttribute="trailing" constant="16" id="b0N-2Q-qD1"/>
+                            <constraint firstItem="2AF-RG-7qE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="dID-HH-ZDI"/>
+                            <constraint firstItem="rNJ-bb-OaK" firstAttribute="top" secondItem="2AF-RG-7qE" secondAttribute="bottom" constant="91" id="jaO-KI-uOX"/>
+                            <constraint firstItem="S3C-83-wfT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jaw-sF-Fhz"/>
+                            <constraint firstItem="kNJ-iX-uHO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="jbl-JT-iyg"/>
+                            <constraint firstItem="S3C-83-wfT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lMU-XU-Jji"/>
+                            <constraint firstItem="2AF-RG-7qE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="228" id="mCc-97-urn"/>
+                            <constraint firstItem="4ok-b5-pkq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q1V-yM-UnM"/>
+                            <constraint firstItem="S3C-83-wfT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="r97-Kx-A9O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2AF-RG-7qE" secondAttribute="trailing" constant="17" id="sGg-Fc-ifu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Random Selector" id="7TG-9f-fX6">
+                        <color key="badgeColor" red="0.99953407049999998" green="0.84096848430000004" blue="0.2915463204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="imagePlayer1" destination="kNJ-iX-uHO" id="RMx-ag-bXa"/>
+                        <outlet property="imagePlayer2" destination="4ok-b5-pkq" id="FV3-mA-f8Z"/>
+                        <outlet property="player1Label" destination="2AF-RG-7qE" id="cfF-zT-DiX"/>
+                        <outlet property="player2Label" destination="rNJ-bb-OaK" id="oVB-Sg-MJx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274" y="-143"/>
+        </scene>
+        <!--Characters View Controller-->
+        <scene sceneID="l0K-8p-Ih1">
+            <objects>
+                <viewController id="MWI-MM-Ydl" customClass="CharactersViewController" customModule="StreetFighterRandomSelector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FCk-q6-Wpu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uTb-GJ-w8J">
+                                <rect key="frame" x="0.0" y="152" width="375" height="315"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" red="0.99953407049999998" green="0.84096848430000004" blue="0.2915463204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CharacterCell" id="Txr-zN-X0x">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Txr-zN-X0x" id="c1v-Hg-rHu">
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street Fighter 5 Character Randomizer" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBX-y0-XSh">
+                                <rect key="frame" x="16" y="20" width="343" height="113"/>
+                                <fontDescription key="fontDescription" name="YOZAKURA-Regular" family="YOZAKURA" pointSize="47"/>
+                                <color key="textColor" red="0.99953407049999998" green="0.84096848430000004" blue="0.2915463204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iF7-0r-iLW">
+                                <rect key="frame" x="16" y="475" width="110" height="53"/>
+                                <fontDescription key="fontDescription" name="YOZAKURA-Regular" family="YOZAKURA" pointSize="34"/>
+                                <state key="normal" title="Select All">
+                                    <color key="titleColor" red="0.99953407049999998" green="0.84096848430000004" blue="0.2915463204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8F-sU-K0p">
+                                <rect key="frame" x="222" y="475" width="137" height="53"/>
+                                <fontDescription key="fontDescription" name="YOZAKURA-Regular" family="YOZAKURA" pointSize="34"/>
+                                <state key="normal" title="Deselect All">
+                                    <color key="titleColor" red="0.99953407049999998" green="0.84096848430000004" blue="0.2915463204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSg-Sj-lsY">
+                                <rect key="frame" x="56.5" y="575" width="261" height="72"/>
+                                <fontDescription key="fontDescription" name="YOZAKURA-Regular" family="YOZAKURA" pointSize="50"/>
+                                <state key="normal" title="Begin Randomize!">
+                                    <color key="titleColor" red="0.99953407049999998" green="0.84096848430000004" blue="0.2915463204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="VCi-4B-toO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="77Y-yz-rEQ" firstAttribute="bottom" secondItem="uTb-GJ-w8J" secondAttribute="bottom" constant="200" id="2Yn-Vh-Xf9"/>
+                            <constraint firstItem="uTb-GJ-w8J" firstAttribute="top" secondItem="vBX-y0-XSh" secondAttribute="bottom" constant="19" id="3cl-nL-00Y"/>
+                            <constraint firstItem="uTb-GJ-w8J" firstAttribute="centerX" secondItem="FCk-q6-Wpu" secondAttribute="centerX" id="Bwk-Ud-vHD"/>
+                            <constraint firstItem="vBX-y0-XSh" firstAttribute="top" secondItem="77Y-yz-rEQ" secondAttribute="top" id="FIh-TY-XYv"/>
+                            <constraint firstItem="vBX-y0-XSh" firstAttribute="leading" secondItem="77Y-yz-rEQ" secondAttribute="leading" constant="16" id="VXv-Gd-RP5"/>
+                            <constraint firstItem="iF7-0r-iLW" firstAttribute="top" secondItem="uTb-GJ-w8J" secondAttribute="bottom" constant="8" id="X18-9X-e7Q"/>
+                            <constraint firstItem="vBX-y0-XSh" firstAttribute="centerX" secondItem="FCk-q6-Wpu" secondAttribute="centerX" id="asy-Oq-2v1"/>
+                            <constraint firstItem="77Y-yz-rEQ" firstAttribute="trailing" secondItem="vBX-y0-XSh" secondAttribute="trailing" constant="16" id="dQy-oq-DBw"/>
+                            <constraint firstItem="77Y-yz-rEQ" firstAttribute="bottom" secondItem="FSg-Sj-lsY" secondAttribute="bottom" constant="20" id="g2F-5B-IzP"/>
+                            <constraint firstItem="iF7-0r-iLW" firstAttribute="leading" secondItem="77Y-yz-rEQ" secondAttribute="leading" constant="16" id="h1G-vb-chU"/>
+                            <constraint firstItem="77Y-yz-rEQ" firstAttribute="trailing" secondItem="X8F-sU-K0p" secondAttribute="trailing" constant="16" id="hNt-fF-uoq"/>
+                            <constraint firstItem="uTb-GJ-w8J" firstAttribute="leading" secondItem="77Y-yz-rEQ" secondAttribute="leading" id="lMh-Tv-xWg"/>
+                            <constraint firstItem="FSg-Sj-lsY" firstAttribute="centerX" secondItem="FCk-q6-Wpu" secondAttribute="centerX" id="v8k-j3-IOs"/>
+                            <constraint firstItem="X8F-sU-K0p" firstAttribute="top" secondItem="uTb-GJ-w8J" secondAttribute="bottom" constant="8" id="xqM-Fd-fiH"/>
+                            <constraint firstItem="uTb-GJ-w8J" firstAttribute="trailing" secondItem="77Y-yz-rEQ" secondAttribute="trailing" id="z77-ar-8DN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="77Y-yz-rEQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="uTb-GJ-w8J" id="xiJ-gC-due"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYs-qo-hDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="-143"/>
+        </scene>
+    </scenes>
+</document>
