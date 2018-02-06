@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imagePlayer1: UIImageView!
     @IBOutlet weak var imagePlayer2: UIImageView!
     
+
     
     
     
@@ -47,6 +48,9 @@ class ViewController: UIViewController {
         p1ImageFetch(name: characters[random])
         p2ImageFetch(name: characters[random2])
         
+    }
+    @IBAction func goBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     

@@ -12,6 +12,10 @@ class CharactersViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+ 
+    var isSelected = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+
+    
     let characters: [String] = ["Abigail", "Akuma", "Alex", "Balrog", "Birdie", "Cammy", "Chun-Li", "Dhalsim", "Ed", "F.A.N.G.", "Guile", "Ibuki", "Juri", "Karin", "Ken", "Kolin", "Laura", "M. Bison", "Menat", "Nash", "Necalli", "R. Mika", "Rashid", "Ryu", "Urien", "Vega", "Zangief", "Zeku"]
     
     override func viewDidLoad() {
@@ -36,9 +40,15 @@ extension CharactersViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath)
-
         let name = "\(characters[indexPath.row])"
-
+        let selected = isSelected[indexPath.row]
+        
+        if selected == true {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+        
         cell.textLabel?.text = name
         cell.textLabel?.textColor = UIColor(red:1.00, green:0.84, blue:0.29, alpha:1.0)
         return cell
@@ -50,14 +60,21 @@ extension CharactersViewController: UITableViewDataSource, UITableViewDelegate {
         
         tableView.deselectRow(at: indexPath, animated: true)
 
+        if isSelected[indexPath.row] == false{
+            isSelected[indexPath.row] = true
+        } else {
+            isSelected[indexPath.row] = false
+        }
+        
         if let cell = tableView.cellForRow(at: indexPath){
-            if cell.accessoryType == .checkmark{
-                cell.accessoryType = .none
-            } else {
+            if isSelected[indexPath.row] == true{
                 cell.accessoryType = .checkmark
+            } else {
+                cell.accessoryType = .none
             }
         }
 //        print("Cell Selected")
+//        print("Row # is \(indexPath)")
     }
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     

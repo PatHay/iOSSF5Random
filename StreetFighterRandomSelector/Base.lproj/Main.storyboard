@@ -71,19 +71,33 @@
                                 <color key="textColor" red="0.99953407049999998" green="0.84096848430000004" blue="0.2915463204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6I-XQ-JlA">
+                                <rect key="frame" x="85" y="572" width="205" height="75"/>
+                                <fontDescription key="fontDescription" name="YOZAKURA-Regular" family="YOZAKURA" pointSize="60"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99953407049999998" green="0.84096848430000004" blue="0.2915463204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHU-XF-YMs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="E6I-XQ-JlA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="1Zp-Bh-eh0"/>
                             <constraint firstItem="RcV-GQ-ZVr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="188.5" id="2eg-NI-S9g"/>
                             <constraint firstItem="kNJ-iX-uHO" firstAttribute="top" secondItem="S3C-83-wfT" secondAttribute="bottom" constant="32" id="75O-u4-ICH"/>
                             <constraint firstItem="4ok-b5-pkq" firstAttribute="top" secondItem="2AF-RG-7qE" secondAttribute="bottom" constant="8" id="8vl-5L-dD4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E6I-XQ-JlA" secondAttribute="trailing" constant="85" id="APA-wN-trC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S3C-83-wfT" secondAttribute="trailing" constant="16" id="BZy-JQ-sZx"/>
                             <constraint firstItem="rNJ-bb-OaK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EiG-aw-bSY"/>
                             <constraint firstItem="rNJ-bb-OaK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J0I-z2-1M7"/>
                             <constraint firstItem="2AF-RG-7qE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="QT1-4H-gBf"/>
+                            <constraint firstItem="E6I-XQ-JlA" firstAttribute="top" secondItem="RcV-GQ-ZVr" secondAttribute="bottom" constant="8" id="TOu-4w-obg"/>
                             <constraint firstItem="RcV-GQ-ZVr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U9h-2M-iqh"/>
                             <constraint firstItem="kNJ-iX-uHO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a5h-Bp-BAE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rNJ-bb-OaK" secondAttribute="trailing" constant="16" id="b0N-2Q-qD1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E6I-XQ-JlA" secondAttribute="bottom" constant="20" id="d2B-oU-hff"/>
                             <constraint firstItem="2AF-RG-7qE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="dID-HH-ZDI"/>
                             <constraint firstItem="rNJ-bb-OaK" firstAttribute="top" secondItem="2AF-RG-7qE" secondAttribute="bottom" constant="91" id="jaO-KI-uOX"/>
                             <constraint firstItem="S3C-83-wfT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jaw-sF-Fhz"/>
@@ -108,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1274" y="-143"/>
+            <point key="canvasLocation" x="1272.8" y="-143.47826086956522"/>
         </scene>
         <!--Characters View Controller-->
         <scene sceneID="l0K-8p-Ih1">
