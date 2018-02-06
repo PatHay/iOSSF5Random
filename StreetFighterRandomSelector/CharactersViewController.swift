@@ -45,11 +45,19 @@ extension CharactersViewController: UITableViewDataSource, UITableViewDelegate {
     }
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     
-    //selecting a cell
+    //selecting and deselecting checkmark
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print("Cell Selected")
-        
+        tableView.deselectRow(at: indexPath, animated: true)
+
+        if let cell = tableView.cellForRow(at: indexPath){
+            if cell.accessoryType == .checkmark{
+                cell.accessoryType = .none
+            } else {
+                cell.accessoryType = .checkmark
+            }
+        }
+//        print("Cell Selected")
     }
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     
